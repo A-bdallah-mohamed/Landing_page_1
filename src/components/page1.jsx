@@ -8,15 +8,31 @@ import { IoWifiSharp } from "react-icons/io5";
 import { GiEarthAsiaOceania } from "react-icons/gi";
 import { HiOutlinePaintBrush } from "react-icons/hi2";
 import { IoChatbubblesOutline } from "react-icons/io5";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { FaApple } from "react-icons/fa";
+import { IoIosBluetooth } from "react-icons/io";
+import { IoIosRefresh } from "react-icons/io";
 
 export default function Page1({stage2}) {
     const [img1,isimginview] = Useintersectionobserver()
 const [stage3,setstage3] = useState(false)
+const [stage4,setstage4] = useState(false)
+const [stage5,setstage5] = useState(false)
 useEffect(()=>{
 setTimeout(() => {
   setstage3(true)
 }, 1600);
 },[stage2])
+useEffect(()=>{
+  setTimeout(() => {
+    setstage4(true)
+  }, 2000);
+  },[stage2])
+  useEffect(()=>{
+    setTimeout(() => {
+      setstage5(true)
+    }, 3000);
+    },[stage2])
   return (
     <div className='page1container'>
 <div className='page1'>
@@ -74,6 +90,34 @@ setTimeout(() => {
        </div>
    </div>
 
+    </div>
+
+    <div className='leftcontainer'>
+   <div className={`leftfirsttext ${stage2 ? 'leftfirstinview': ''}`}>Correcting Minds <br />Empowering succsess <br /> - Unity Sphere</div>
+   <div className='midleft'>
+
+    <div className={`getanapp ${stage2 ? 'getanappinview' : ''}`}>
+      <div className='getanappbox'>
+        <div>Get an App</div>
+        <div className='midmidtext'>Integrate your <br />schedule to your <br /> daily routine easily</div>
+        <div className='applegooglelogos'>
+          <FaApple /> <IoLogoGooglePlaystore />
+        </div>
+      </div>
+      <div className='twoicons'>
+      <IoIosRefresh className='icccon'/>
+      <IoIosBluetooth className='icccon'/>
+      </div>
+    </div>
+    <div className={`circlecontainercontainer ${stage2 ? 'contcontinview' : ''}`}>
+    <div className={`circlecontainer ${stage4 ? 'continview' : ''} ${stage5 ? 'continview5th' : ''}`}>
+      <div className={`secondwave ${stage4 ? 'secondinview' : ''} ${stage5 ? 'secondinview5th' : ''}`}>
+    <div className={`livecircle ${stage3 ? 'livecinview' : ''}`}>Call</div></div></div></div>
+
+   </div>
+   <img src='https://i.ibb.co/xX3XCK3/BB1107-radkid-cord-cap-blue-6-d4d72b85-f70f-47d3-93f8-d53142f3858b-1024x1024.jpg'
+   className={`kidwithcap ${stage2 ? 'kidwithcapinview' : ''}`}
+   ></img>
     </div>
 </div>
     </div>
