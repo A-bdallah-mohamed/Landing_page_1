@@ -1,38 +1,398 @@
-.App {
-  text-align: center;
+*{
+  cursor: url(../public/cursor/icons8-cursor-20.png), auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #0a0a0a;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 0 70px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  gap: 2px;
+}
+li{
+  padding: 6px 10px;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+li:hover{
+cursor: pointer;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  transform: translateY(-100%) rotate(50deg);
+  transition: all 1s ease;
+}
+.logoinview{
+  transform: translateY(0) rotate(0);
+  transition: all 1s ease;
+}
+.li1,.li2,.li3,.li4,.li5{
+  width: 10px;
+  height: 20px;
+  color: transparent;
+}
+.li1{
+  transform: translateY(-120%);
+    transition: all 0.3s ease;
+}
+.li1inview{
+  transform: translateY(0);
+    transition: all 0.3s ease;
+}
+.li2{
+  transform: translateY(-120%);
+    transition: all 0.5s ease;
+}
+.li2inview{
+  transform: translateY(0);
+    transition: all 0.5s ease;
+}
+.li3{
+  transform: translateY(-120%);
+    transition: all 0.7s ease;
+}
+.li3inview{
+  transform: translateY(0);
+    transition: all 0.7s ease;
+}
+.li4{
+  transform: translateY(-120%);
+    transition: all 0.9s ease;
+}
+.li4inview{
+  transform: translateY(0);
+    transition: all 0.9s ease;
+}
+.li5{
+  transform: translateY(-120%);
+    transition: all 1.1s ease;
+}
+.li5inview{
+  transform: translateY(0);
+    transition: all 1.1s ease;
+}
+.li1inview,.li2inview,.li3inview{
+  width: 55px;
+}
+.li4inview{
+  width: 100px;
+  text-wrap: nowrap;
+}
+.li5inview{
+  width: 30px;
+}
+.licolor{
   color: white;
 }
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+width: 98vw;
+max-width: 1360px;
+}
+.maintextcontainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maintext{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  transform: translateY(90%) rotateX(70deg);
+  transition: all 1s ease;
+  z-index: 10;
+}
+.maintextinview{
+  transform: translateY(30%) rotateX(40deg);
+  transition: all 1s ease;
+}
+.maintextstage2{
+  transform: translateY(0) rotateX(0);
+  transition: all 1s ease;
+}
+.purple{
+  color: #9a75e3;
+  transition: all 1s ease;
+}
+.page1container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.page1{
+  width: 90%;
+height: auto;
+display: flex;
+flex-direction: row-reverse;
+}
+.kidwearingglasses{
+  width: auto;
+  height: 31%;
+  border-radius: 130px;
+  transform: translateY(90%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.kidinview{
+  opacity: 0.3;
+  transform: translateY(40%);
+  transition: all 1s ease;
+}
+.kidstage2{
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease;
+}
+.rightcontainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.kidonbeach{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
 
-.App-link {
-  color: #61dafb;
+}
+.kidnadcellphoneicon{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 100px;
+  transform: translateY(0) translateX(0);
+  background-color: transparent;
+  transition: all 0.8s ease;
+  font-size: 36px;
+}
+.personboxcontainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: transparent;
+}
+.personbox{
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.918);
+  margin-right: 80px;
+  border-radius: 40px;
+}
+.triconscont{
+  width: 130px;
+  height: 130px;
+  border-radius: 40px;
+  transform: translateY(-60px) translateX(30px) rotate(360deg);
+  transition: all 0.8s ease;
+  opacity: 0;
+}
+.triconscontinview{
+  opacity: 1;
+  transform: translateY(-50px) translateX(30px) rotate(0deg);
+  transition: all 0.8s ease;
+}
+.icontrspbckg{
+  border: 1px solid white;
+  width: 2px;
+  height:  2px;
+  padding: 10px;
+  border-radius: 100%;
+  color: transparent;
+  transition: all 1.5s ease;
+}
+.iconinview{
+  width:30px;
+  height: 30px;
+  color: white;
+  transition: all 1.5s ease;
+}
+.icons1strow{
+  padding: 10px 10px 0 10px;
+  gap: 10px;
+  display: flex;
+}
+.namepic,.nametime{
+  background-color: transparent;
+}
+.nametime{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+}
+.namepic{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.namepic img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+}
+.myimage img{
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+.callicons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 15px 0px 15px;
+  background-color: transparent;
+}
+.myimage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.time{
+  font-weight: 100;
+  margin-left: 10px;
+}
+.kidnadcellphoneiconcontainer{
+    display: flex;
+  flex-direction: column;
+  transform: translateY(0) translateX(0);
+  background-color: transparent;
+  transition: all 0.8s ease;
+  opacity: 0;
+  gap: 40px;
+}
+.cellphoneicon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  background-color: rgb(222, 222, 222);
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kidcellphoneinview{
+  transform: translateY(-440px) translateX(20px);
+  transition: all 0.8s ease;
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cellphoneicon{
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+  transform: translateX(-25%) translateY(-10%);
+  opacity: 0.8;
+}
+.createameetingcontainer{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.createameeting{
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  margin-right: 80px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+.textnbuttons{
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-55px);
+  padding: 0 40px 0 20px;
+}
+.bestp{
+  color: white;
+  font-weight: 500;
+}
+.bestp span{
+color: #9a75e3;
+}
+.buttonss{
+width: 220px;
+height: 25px;
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}
+.button1{
+  width: 98px;
+  border-radius: 60px;
+  height: 25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.button2{
+  width: 98px;
+  border-radius: 60px;
+  height: 25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  position: relative;
+  transition: all 1s ease;
+  padding-right: 25px;
+  color: transparent;
+}
+.button2inview{
+  background-color: #9a75e3;
+  transition: all 1s ease;
+  color: black;
+}
+.switchcircle{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+background-color: white;
+border-radius: 100%;
+top: 0.5px;
+left: 4px;
+border: 1px solid black;
+transition: all 1s ease;
+}
+.switchcircleinview{
+  left: 86px;
+  transition: all 1s ease;
 }
