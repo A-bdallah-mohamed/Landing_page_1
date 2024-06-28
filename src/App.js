@@ -3,7 +3,8 @@ import './App.css';
 import Header from './components/header';
 import Useintersectionobserver from './custom hooks/useintersectionobserver';
 import { useRef , useEffect , useState } from 'react';
-import Page1 from './components/page1';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
 function App() {
   const [maintext,maintextinview] = Useintersectionobserver()
 
@@ -28,6 +29,7 @@ setTimeout(() => {
 </div>
 
 <Page1 stage2={stage2}/>
+<Page2 />
 </div>
     </div>
   );

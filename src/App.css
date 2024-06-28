@@ -583,3 +583,10 @@ padding: 5px;
 .midmidtext{
   font-size: 10px;
 }
+.page2container{
+  transform: translateY(-550px);
+  color: white;
+  padding: 0 30px;
+  display: flex;
+
+}
