@@ -4,6 +4,14 @@ import Useintersectionobserver from '../custom hooks/useintersectionobserver'
 import { GoArrowRight } from "react-icons/go";
 import { IoIosCall } from "react-icons/io";
 import { CiCalendar } from "react-icons/ci";
+import { GoFileSymlinkFile } from "react-icons/go";
+import { IoCallOutline } from "react-icons/io5";
+import { LuMessagesSquare } from "react-icons/lu";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { IoVolumeMuteSharp } from "react-icons/io5";
+import { CiMicrophoneOn } from "react-icons/ci";
+import { CiBatteryCharging } from "react-icons/ci";
+
 
 
 
@@ -29,6 +37,9 @@ if(increasingnum < 600){
   const [bigicon,isbigiconseen] = Useintersectionobserver()
   const [smalltext,issmalltextseen] = Useintersectionobserver()
   const [bigmaintext,isbigmaintextseen] = Useintersectionobserver()
+
+
+
   return (
     <div className='pag2container'>
       <div className='peopletextandbigtextcontainer'>
@@ -142,12 +153,98 @@ if(increasingnum < 600){
 
 <div className='phonecontainer'>
 
-<div className='phone'>
+<div className={`phone ${isbigiconseen ? 'phoneseen' : ''}`}>
 
-<div className='face' id='front'></div>
-<div className='face' id='back'></div>
-<div className='face' id='right'></div>
-<div className='face' id='left'></div>
+<div className='face' id='front'
+style={{backgroundImage:'url(https://w0.peakpx.com/wallpaper/284/598/HD-wallpaper-sci-fi-space-galaxy-moon-mountain-night-planet-purple-sky-stars.jpg)'
+  , backgroundSize:'cover'
+}}>
+  <div className='topnotch'></div>
+  <div className='bottomnotch'></div>
+  <div className='bottomappcenter'>
+
+<div className='imgandiconscontainer'>
+
+  <div className='appcentericon'><GoFileSymlinkFile /></div>
+
+  <div className='appcentericon'><IoCallOutline /></div>
+
+    <div className='centerpersonimg' ></div>
+
+    <div className='appcentericon'><LuMessagesSquare /></div>
+
+    <div className='appcentericon'><MdOutlineFavoriteBorder /></div>
+
+    </div>
+
+  </div>
+
+
+
+<div className='mainpagecomponentscotnainer'>
+
+<div className='twocomponentscontainer'>
+  <div className={`mainpagecomponent firstcomponent ${isbigiconseen ? 'firstcomponentseen' : ''}`}></div>
+
+  <div className={`mainpagecomponent secondcomponent ${isbigiconseen ? 'secondcomponentseen' : ''}`}>
+
+    <div className='twopeopledivinmainpagecomponent'>
+      <div className='peopleinmainpagecomponent' style={{backgroundImage:'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLTSY8qs2hKNCzwILGcvUFHZVcaKGOfVRfT0d9qkbqw0KQOOCzZzAG07LiSvsYBp1HkI&usqp=CAU)' , backgroundSize:'cover'}}></div>
+      <div className='peopleinmainpagecomponent secondpersonimaminpagecomponent' style={{backgroundImage:'url(https://i.pinimg.com/originals/7f/ec/54/7fec5405754c876a2ffb082ff31963d7.png)' , backgroundSize:'cover'}}></div>
+    </div>
+
+    <div className='textinmaincomponent'>lina and sara <br/> will join in 7 minutes</div>
+  </div>
+  </div>
+  <div className='twocomponentscontainer'>
+  <div className={`mainpagecomponent thirdcomponent ${isbigiconseen ? 'thirdcomponentseen' : ''}`}>
+    <div className='smallcaallbuttonincomponent'><IoCallOutline /></div>
+  </div>
+
+  <div className={`mainpagecomponent fourthcomponent ${isbigiconseen ? 'fourthcomponentseen' : ''}`}>
+    <div className='alliconsmainpagecomponentcontainer'>
+    <div className='twoiconscontainerinmainpagecomponent'>
+      <div className='smalliconinmainpagecomponent white'><CiMicrophoneOn  /></div>
+      <div className='smalliconinmainpagecomponent red'><IoVolumeMuteSharp /></div> 
+    </div>
+    <div className='twoiconscontainerinmainpagecomponent'>
+      <div className='smalliconinmainpagecomponent white'><CiBatteryCharging /></div>
+      <div className='smalliconinmainpagecomponent white lasticon'><LuMessagesSquare /></div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div className='twocomponentscontainer'>
+  <div className={`mainpagecomponent fifthcomponent ${isbigiconseen ? 'fifthcomponentseen' : ''}`}></div>
+
+  <div className={`mainpagecomponent sixthcomponent ${isbigiconseen ? 'sixthcomponentseen' : ''}`}></div>
+  </div>
+</div>
+
+
+
+</div>
+<div className='face' id='back'>
+  <div className='cameracontainer'>
+    <div className='twocameras'>
+      <div className='camera'></div>
+      <div className='camera'></div>
+    </div>
+    <div className='onecamer'>
+    <div className='camera'></div>
+    </div>
+  </div>
+</div>
+<div className='face' id='right'>
+  <div className='volumeupdownbuttonscontainer'>
+    <div className='volumebutton'></div>
+    <div className='volumebutton'></div>
+  </div>
+</div>
+<div className='face' id='left'>  <div className='volumeupdownbuttonscontainer'>
+    <div className='volumebutton'></div>
+ 
+  </div></div>
 <div className='face' id='up'></div>
 <div className='face' id='down'></div>
 
@@ -160,6 +257,8 @@ if(increasingnum < 600){
 
 
 </div>
+
+
     </div>
   )
 }

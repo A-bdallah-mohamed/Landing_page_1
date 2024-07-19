@@ -100,9 +100,9 @@ cursor: pointer;
 .maincontainer{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
+  align-items: center;
+  height: 2500px;
 }
 .container{
 width: 98vw;
@@ -1022,54 +1022,409 @@ gap: 5PX;
   display: flex;
   align-items: center;
   perspective: 1000px;
+  transition: all 1s ease;
   justify-content: center;
+
 }
 .phone{
   border-radius: 10px;
-  background-color: red;
   position: relative;
-  transform: translateY(-200px) rotateY(0deg);
-  transition: all 5s ease;
+  transform: translateY(280px) rotateY(360deg) rotate(20deg) translateX(-100px);
+  transition: all 2s ease;
   transform-style: preserve-3d;
+}
+.phoneseen{
+  transform: translateY(-230px) rotateY(0deg) rotate(0deg) translateX(-120px);
 }
 .face{
   position: absolute;
 }
 #front{
-  width: 250px;
+  width: 243px;
   background-color: #543c82;
-  height: 470px;
-  border-radius: 18px;
-  transform: translateZ(30px);
+  height: 458px;
+border: solid 7px black;
+  transform: translateZ(15px);
+  outline: 1px solid white;
+  border-radius: 22px;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  overflow: hidden;
   }
-  #back{
-    width: 250px;
-    background-color: #543c82;
-    height: 470px;
+  .bottomappcenter{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.505);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgandiconscontainer{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .appcentericon{
+    font-size: 25px;
+  }
+  .twocomponentscontainer{
+    display: flex;
+    gap: 15px;
+  }
+  .firstcomponent{
+    background-image: url('https://thumbs.dreamstime.com/b/young-man-cocktail-beach-chair-young-man-cocktail-beach-chair-seacoast-129386286.jpg');
+    background-size: cover;
     border-radius: 18px;
-    transform: translateZ(-30px);
+    transform: translateX(-130px);
+    transition: 1s ease all;
+  }
+  .firstcomponentseen{
+    transform: translateX(0);
+    transition: 1s ease all;
+    transition-delay: 1s;
+  }
+  .twopeopledivinmainpagecomponent{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+  }
+  .peopleinmainpagecomponent{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 100%;
+  }
+  .secondpersonimaminpagecomponent{
+    transform: translateX(10px);
+  }
+  .secondcomponent{
+background-color: rgba(192, 192, 192, 0.437);
+border-radius: 18px;
+display: flex;
+flex-direction: column;
+transition: all ease 1s;
+transform: translateX(130px);
+    }
+ .secondcomponentseen{
+  transform: translateX(0);
+  transition: all 1s ease;
+  transition-delay: 1.2s;
+ }
+    .fourthcomponent{
+background-color: rgba(192, 192, 192, 0.437);
+border-radius: 18px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+transition: 1s ease all;
+transform: translateX(130px);
+    }
+    .fourthcomponentseen{
+      transform: translateX(0px);
+      transition: 1s ease all;
+      transition-delay: 1.6s;
+    }
+    .twoiconscontainerinmainpagecomponent{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+  
+    }
+    .alliconsmainpagecomponentcontainer{
+      width: 80%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px 0;
+      gap: 5px;
+    }
+    .smalliconinmainpagecomponent{
+      height: 35px;
+      width: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      border-radius: 100%;
+    }
+    .white{ background-color: white; color: black;} .red { background-color: rgb(240, 0, 0); color: white;}
+    .textinmaincomponent{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      padding: 0 8px;
+      height: 35%;
+    }
+  .thirdcomponent{
+    border-radius: 100%;
+background-image: url('https://thumbs.dreamstime.com/b/smiling-teen-boy-character-portrait-d-cartoon-style-handsome-generic-white-clean-background-digital-painting-movies-281956632.jpg');
+background-size: cover; 
+position: relative;
+transition: all 1s ease;
+transform: translateX(-130px);
+}
+.thirdcomponentseen{
+transform: translateX(0);
+transition: all 1s ease;
+transition-delay: 1.4s;
+}
+.smallcaallbuttonincomponent{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100%;
+  right: 0;
+  position: absolute;
+  transform: translateX(5px) translateY(-5px);
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+
+.fifthcomponent{
+    background-image: url('https://us.123rf.com/450wm/benzoix/benzoix2212/benzoix221207898/195563206-okay-got-it-cheeky-flirty-girlfriend-winking-coquettish-show-alright-okay-ok-sign-smiling-broadly.jpg?ver=6');
+    background-size: cover;
+    border-radius: 18px;
+    transition: all ease 1s;
+    transform: translateX(-130px);
+}
+.fifthcomponentseen{
+  transition: all ease 1s;
+  transform: translateX(0px);
+  transition-delay: 1.8s;
+}
+.sixthcomponent{
+  background-image: url('https://www.shutterstock.com/image-photo/photo-young-beautiful-smiling-good-600nw-1926675866.jpg');
+  background-size: cover;
+  border-radius: 18px;
+  transition: all ease 1s;
+  transform: translateX(130px);
+}
+.sixthcomponentseen{
+  transition: all ease 1s;
+  transition-delay: 2s;
+  transform: translateX(0);
+}
+  .mainpagecomponentscotnainer{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+transform: translateY(-25px);
+  }
+  .mainpagecomponent{
+    width: 95px;
+    height: 95px;
+  }
+  .centerpersonimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSztEHGDHsSIlKxW_dc1sltM6CBxFNT7ocBQ&s');
+    background-size: cover;
+  }
+.topnotch{
+position: absolute;
+width: 80px;
+height: 20px;
+background-color: black;
+border-radius: 22px;
+top: 5px;
+left: 80px;
+}
+.bottomnotch{
+  position: absolute;
+width: 100px;
+height: 5px;
+background-color: rgb(177, 177, 177);
+border-radius: 22px;
+bottom: 5px;
+left: 75px;
+z-index: 10;
+}
+  #back{
+    width: 243px;
+    background-color: #543c82;
+    height: 458px;
+    border: solid 7px black;
+    transform: translateZ(-15px);
+    display: flex;
+    border-radius: 22px;
+  }
+    .cameracontainer{
+width: 120px;
+height: 120px;
+border: 2px solid black;
+border-radius: 16px;
+position: absolute;
+right: 14px;
+display: flex;
+top: 14px;
+flex-direction: row-reverse;
+background-color: #808080;
+    }
+    .twocameras{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+ margin-right: 6px;
+ margin-top: 6px;
+    }
+    .onecamer{
+      height: 100%;
+      display: flex;
+align-items: center;
+justify-content: center;
+      gap: 5px;
+ margin-right: 5px;
+ margin-top: -5px;
+    }
+    .camera{
+      width: 50px;
+      height: 50px;
+      background-color: rgb(42, 42, 42);
+      border-radius: 100%;
+      border: 0.5px solid black;
     }
 #left{
-  height: 470px;
-  width: 50px;
-  transform: translateX(-55px) rotateY(90deg);
-  background-color: #543c82;  
+  height: 456px;
+  width: 30px;
+  transform: translateX(-15px) rotateY(90deg);
+  background-color: #3a275d;
+  border-top: solid black 7px;
+  border-bottom: solid black 7px;
 }
 #right{
-  height: 470px;
-  width: 50px;
-  transform: translateX(255px) rotateY(-90deg);
-  background-color: #543c82;  
+  height: 456px;
+  width: 30px;
+  transform: translateX(235px) rotateY(90deg);
+  background-color: #3a275d;
+  display: flex;
+align-items: center;
+justify-content: center;
+  overflow: hidden;
+  font-size: xx-small;
+  border-top: solid black 7px;
+  border-bottom: solid black 7px;
+}
+.volumeupdownbuttonscontainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  right: 9px;
+  gap: 5px;
+}
+.volumebutton{
+  width: 10px;
+  height: 50px;
+  border: 1px solid black ;
+  border-radius: 16px;
+  background-color: #23163c;
 }
 #up{
-  height: 50px;
+  height: 30px;
   width: 250px;
-  transform: translateY(-55px) rotateX(90deg);
-  background-color: #543c82;  
+  transform: translateY(-16px) rotateX(90deg);
+  background-color: #131313;  
 }
 #down{
-  height: 50px;
+  height: 39px;
   width: 250px;
-  transform: translateY(475px) rotateX(-90deg);
-  background-color: #543c82;  
+  transform: translateY(445.5px) rotateX(90deg) translateZ(-5px);
+  background-color: #131313;   
+}
+.exploreourservicecontainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+transform: translateY(00px);
+transition: all 1s ease;
+margin-top: -550px;
+}
+.explorecontainerseen{
+  transition: all 1s ease;
+  transform: translateY(-70px);
+}
+.exploreourservice{
+  width: 100px;
+  height: 40px;
+background-color: #9a75e3;
+  border-radius: 22px;
+  font-size: 22px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #9a75e3;
+font-weight: 500;
+transition: all 1s ease;
+overflow: hidden;
+padding: 0 35px 0 0;
+white-space: nowrap;
+}
+.explorecomponentseen{
+transition: all 1s ease;
+  color: black;
+  width: 220px;
+}
+.smallarrowincircle{
+  width: 98%;
+  height: 100%;
+  background-color: #9a75e3;
+  position: absolute;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  right: 0;
+  transition: all 1s ease;
+}
+.arrowcontainerseen{
+  transition: all 1s ease;
+  width: 18%;
+  transition-delay: 0.5s ;
+}
+.arrowitselfincircle{
+  height: 38px;
+  width: 38px;
+  background-color: black;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lasttextcontaier{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  transform: translateY(0px);
+  font-weight: 500;
+  transition: all 1s ease;
+  font-size: 18px;
+}
+.lasttextseen{
+  transition: all 1s ease;
+  transform: translateY(-70px);
 }
